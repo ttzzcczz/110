@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تنقل بين الصفحات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navigation a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .navigation a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation" id="navigation">
+            <!-- الروابط ستتم إضافتها هنا بواسطة الجافاسكريبت -->
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navigationDiv = document.getElementById('navigation');
+            for (var i = 1; i <= 90; i++) {
+                var link = document.createElement('a');
+                link.href = '(' + i + ').html';
+                link.textContent = 'الصفحة ' + i;
+                navigationDiv.appendChild(link);
+            }
+        });
+    </script>
+</body>
+
+</html>
