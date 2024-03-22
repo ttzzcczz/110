@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة تشغيل المسلسلات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .playlist {
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .playlist button {
+            background-color: #FF0000;
+            /* اللون الأحمر */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .playlist button:hover {
+            background-color: #CC0000;
+            /* تغيير لون الزر عندما يتم المرور فوقه */
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            /* نسبة عرض المشغل إلى ارتفاعه (لازمة للتأكد من أن المشغل يظهر بشكل صحيح) */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="playlist">
+        <button onclick="playVideo('index/(41).htm')">السجن (1)</button>
+        <button onclick="playVideo('index/(9).htm')">السجن (2)</button>
+        <button onclick="playVideo('index/(17).htm')">السجن (3)</button>
+        <button onclick="playVideo('index/(82).htm')">السجن (4)</button>
+        <button onclick="playVideo('index/(50).htm')">السجن (5)</button>
+        <button onclick="playVideo('index/(2).htm')">السجن (6)</button>
+        <button onclick="playVideo('index/(27).htm')">السجن (7)</button>
+        <button onclick="playVideo('index/(53).htm')">السجن (8)</button>
+        <button onclick="playVideo('index/(52).htm')">السجن (9)</button>
+        <button onclick="playVideo('index/(21).htm')">السجن (10)</button>
+        <button onclick="playVideo('index/(29).htm')">السجن (11)</button>
+        <button onclick="playVideo('index/(63).htm')">السجن (12)</button>
+        <button onclick="playVideo('index/(90).htm')">السجن (13)</button>
+        <button onclick="playVideo('index/(34).htm')">السجن (14)</button>
+        <button onclick="playVideo('index/(16).htm')">السجن (15)</button>
+        <button onclick="playVideo('index/(61).htm')">السجن (16)</button>
+        <button onclick="playVideo('index/(44).htm')">السجن (17)</button>
+        <button onclick="playVideo('index/(80).htm')">السجن (18)</button>
+        <button onclick="playVideo('index/(55).htm')">السجن (19)</button>
+        <button onclick="playVideo('index/(86).htm')">السجن (20)</button>
+        <button onclick="playVideo('index/(87).htm')">السجن (20)</button>
+        <button onclick="playVideo('index/(43).htm')">السجن (24)</button>
+        <button onclick="playVideo('index/(40).htm')">السجن (23)</button>
+        <button onclick="playVideo('index/(82).htm')">السجن (22)</button>
+        <button onclick="playVideo('index/(77).htm')">السجن (25)</button>
+        <button onclick="playVideo('index/(7).htm')">السجن (26)</button>
+        <button onclick="playVideo('index/(3).htm')">السجن (28)</button>
+        <button onclick="playVideo('index/(68).htm')">السجن (29)</button>
+        <button onclick="playVideo('index/(75).htm')">السجن (30)</button>
+        <button onclick="playVideo('index/(23).htm')">السجن (27)</button>
+        <button onclick="playVideo('index/(61).htm')">السجن (16)</button>
+        <button onclick="playVideo('index/(86).htm')">السجن (20)</button>
+
+    </div>
+    <div class="video-container" id="video-container">
+        <!-- سيظهر المشغل هنا -->
+    </div>
+    <script>
+        function playVideo(videoPath) {
+            var container = document.getElementById('video-container');
+            container.innerHTML = '<iframe width="560" height="315" src="' + videoPath + '" frameborder="0" allowfullscreen></iframe>';
+        }
+    </script>
+</body>
+
+</html>
