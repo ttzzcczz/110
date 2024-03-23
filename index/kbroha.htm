@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Courier Prime' rel='stylesheet'>
+    <title>قائمة تشغيل المسلسلات</title>
+    <style>
+        body {
+            font-family: 'Courier Prime';
+            background-color: #222222;
+        }
+
+        .playlist {
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .playlist button {
+            background-color: #be0000;
+            /* اللون الأحمر */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .playlist button:hover {
+            background-color: #CC0000;
+            /* تغيير لون الزر عندما يتم المرور فوقه */
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            /* نسبة عرض المشغل إلى ارتفاعه (لازمة للتأكد من أن المشغل يظهر بشكل صحيح) */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="playlist">
+        <button onclick="playVideo('index/(88).htm')">كبروها (1)</button>
+        <button onclick="playVideo('index/(49).htm')">كبروها (2)</button>
+        <button onclick="playVideo('index/(71).htm')">كبروها (3)</button>
+        <button onclick="playVideo('index/(20).htm')">كبروها (4)</button>
+        <button onclick="playVideo('index/(38).htm')">كبروها (5)</button>
+        <button onclick="playVideo('index/(84).htm')">كبروها (6)</button>
+        <button onclick="playVideo('index/(15).htm')">كبروها (7)</button>
+        <button onclick="playVideo('index/(25).htm')">كبروها (8)</button>
+        <button onclick="playVideo('index/(60).htm')">كبروها (9)</button>
+        <button onclick="playVideo('index/(65).htm')">كبروها (10)</button>
+        <button onclick="playVideo('index/(67).htm')">كبروها (11)</button>
+        <button onclick="playVideo('index/(22).htm')">كبروها (12)</button>
+        <button onclick="playVideo('index/(69).htm')">كبروها (13)</button>
+        <button onclick="playVideo('index/(78).htm')">كبروها (14)</button>
+        <button onclick="playVideo('index/(48).htm')">كبروها (15)</button>
+        <button onclick="playVideo('index/(12).htm')">كبروها (16)</button>
+        <button onclick="playVideo('index/(37).htm')">كبروها (17)</button>
+        <button onclick="playVideo('index/(14).htm')">كبروها (18)</button>
+        <button onclick="playVideo('index/(59).htm')">كبروها (19)</button>
+        <button onclick="playVideo('index/(11).htm')">كبروها (20)</button>
+        <button onclick="playVideo('index/(24).htm')">كبروها (21)</button>
+        <button onclick="playVideo('index/(4).htm')">كبروها (22)</button>
+        <button onclick="playVideo('index/(5).htm')">كبروها (23)</button>
+        <button onclick="playVideo('index/(58).htm')">كبروها (24)</button>
+        <button onclick="playVideo('index/(36).htm')">كبروها (25)</button>
+        <button onclick="playVideo('index/(51).htm')">كبروها (26)</button>
+        <button onclick="playVideo('index/(83).htm')">كبروها (27)</button>
+        <button onclick="playVideo('index/(39).htm')">كبروها (28)</button>
+        <button onclick="playVideo('index/(33).htm')">كبروها (29)</button>
+        <button onclick="playVideo('index/(32).htm')">كبروها (30)</button>
+
+
+    </div>
+    <div class="video-container" id="video-container">
+        <!-- سيظهر المشغل هنا -->
+
+    </div>
+    <script>
+        function playVideo(videoPath) {
+            var container = document.getElementById('video-container');
+            container.innerHTML = '<iframe width="560" height="315" src="' + videoPath + '" frameborder="0" allowfullscreen></iframe>';
+        }
+    </script>
+</body>
+
+</html>
