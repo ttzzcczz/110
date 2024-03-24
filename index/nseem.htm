@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Courier' rel='stylesheet'>
+    <title>قائمة تشغيل المسلسلات</title>
+    <style>
+        body {
+            font-family: Courier Prime;
+            background-color: #222222;
+        }
+
+        .playlist {
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .playlist button {
+            background-color: #be0000;
+            /* اللون الأحمر */
+            color: rgb(207, 207, 207);
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .playlist button:hover {
+            background-color: #CC0000;
+            /* تغيير لون الزر عندما يتم المرور فوقه */
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            /* نسبة عرض المشغل إلى ارتفاعه (لازمة للتأكد من أن المشغل يظهر بشكل صحيح) */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="playlist">
+        <button onclick="playVideo('index/(26).htm')">1النسيم</button>
+        <button onclick="playVideo('index/(66).htm')">النسيم2</button>
+        <button onclick="playVideo('index/(57).htm')">3النسيم</button>
+        <button onclick="playVideo('index/(31).htm')">4النسيم</button>
+        <button onclick="playVideo('index/(54).htm')">5النسيم</button>
+        <button onclick="playVideo('index/(79).htm')">6النسيم</button>
+        <button onclick="playVideo('index/(42).htm')">7النسيم</button>
+        <button onclick="playVideo('index/(72).htm')">8النسيم</button>
+    </div>
+    <div class="video-container" id="video-container">
+        <!-- سيظهر المشغل هنا -->
+    </div>
+    <script>
+        function playVideo(videoPath) {
+            var container = document.getElementById('video-container');
+            container.innerHTML = '<iframe width="560" height="315" src="' + videoPath + '" frameborder="0" allowfullscreen></iframe>';
+        }
+    </script>
+</body>
+
+</html>
