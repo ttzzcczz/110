@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Courier' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Courier Prime' rel='stylesheet'>
     <title>قائمة تشغيل المسلسلات</title>
     <style>
         body {
-            font-family: Courier Prime;
+            font-family: 'Courier Prime';
             background-color: #222222;
         }
 
@@ -22,7 +22,7 @@
         .playlist button {
             background-color: #be0000;
             /* اللون الأحمر */
-            color: rgb(207, 207, 207);
+            color: white;
             border: none;
             padding: 10px 20px;
             margin: 5px;
@@ -66,15 +66,18 @@
         <button onclick="playVideo('(13).htm')">8 فراموش</button>
         <button onclick="playVideo('(95).htm')">9 فراموش</button>
         <button onclick="playVideo('(96).htm')">10 فراموش</button>
-        <div class="video-container" id="video-container">
-            <!-- سيظهر المشغل هنا -->
-        </div>
-        <script>
-            function playVideo(videoPath) {
-                var container = document.getElementById('video-container');
-                container.innerHTML = '<iframe width="560" height="315" src="' + videoPath + '" frameborder="0" allowfullscreen></iframe>';
-            }
-        </script>
+
+    </div>
+    <div class="video-container" id="video-container">
+        <!-- سيظهر المشغل هنا -->
+
+    </div>
+    <script>
+        function playVideo(videoPath) {
+            var container = document.getElementById('video-container');
+            container.innerHTML = '<iframe width="560" height="315" src="' + videoPath + '" frameborder="0" allowfullscreen></iframe>';
+        }
+    </script>
 </body>
 
 </html>
