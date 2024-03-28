@@ -16,6 +16,8 @@
         href="https://www.yacoline.com/themes/default/player/plugins/quality/quality.min.css?version=2.2.3" />
     <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>0328 (1)</title>
 </head>
 
@@ -26,14 +28,13 @@
                     src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA9TBwSYTBoMpZ3NxvFXmNQGsFjwtHogbkmHisdecmN3QtvZUkdzOG1BjIfepcSWmlomCQklTZKBNd8uwHe6kGDDjgiYRuI9_Rm25G6w07HKfSsQ1xqO1eLILmtVG4jAx1rIFUv8xwtoPA9O-DTyX743LnHWefvPTHWzz3PMswF3Led8AwkXnxHsReMA/s50/%D8%AA%D8%AA%D8%AA%D8%AA.png"
                     alt='watermark logo'></a>
         </div>
-<div id="age-gate-popup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 50%; background-color: rgba(0, 0, 0, 0.5); z-index: 9999;">
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; text-align: center; max-width: 50%; overflow: auto;">
-                <h2>الفيديو مقيد بفئة عمرية محددة بسبب وجود مناظر بشعة</h2>
-                <button id="over-18-btn">أنا +18</button>
-                <button id="back-to-home-btn">الرجوع للصفحة الرئيسية</button>
-            </div>
-        </div>
-
+<div id="age-gate-popup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 9999;">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; text-align: center; max-width: 80%; overflow: auto;">
+        <h2>الفيديو مقيد بفئة عمرية محددة بسبب وجود مناظر بشعة</h2>
+        <button id="over-18-btn" style="display: block; width: 80%; margin-bottom: 10px;">أنا +18</button>
+        <button id="back-to-home-btn" style="display: block; width: 80%;">الرجوع للصفحة الرئيسية</button>
+    </div>
+</div>
         <video id="my-video" style="width:100%; height:100%;position: relative;"
             poster="https://www.yacoline.com/upload/photos/2024/03/6e2d5ed97fae58a5791c4dd9d0ea423a36c1afbc9amznT9XYvFWincAdhpG.video_thumb_2655_3296.jpeg"
             playsinline>
@@ -118,6 +119,19 @@
     .mejs__time-current {
         background-color: #be0000;
     }
+    @media screen and (max-width: 600px) {
+  #age-gate-popup {
+    width: 90%; /* عرض أصغر للشاشات الصغيرة */
+    height: auto; /* ارتفاع يتكيف مع محتوى المربع */
+    padding: 10px; /* مسافة داخلية أقل للحفاظ على التناسب */
+  }
+  #age-gate-popup div {
+    max-width: 100%; /* حد أقصى لعرض المحتوى داخل المربع */
+  }
+  #age-gate-popup button {
+    width: 100%; /* عرض الأزرار بالكامل */
+  }
+}
 </style>
 <script>
 
