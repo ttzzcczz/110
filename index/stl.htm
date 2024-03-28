@@ -1,23 +1,23 @@
 <style type="text/css">
-</style>
+   </style>
 <html>
 <head>
-<meta charset="UTF-8">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
- <script src="https://www.yacoline.com/themes/default/js/Fingerprintjs2/fingerprint2.js"></script>
- <link rel="stylesheet" href="https://www.yacoline.com/themes/default/player/css/mediaelementplayer.min.css?version=2.2.3" />
- <script src="https://www.yacoline.com/themes/default/player/js/mediaelement-and-player.min.js?version=2.2.3"></script>
- <script src="https://www.yacoline.com/themes/default/player/plugins/quality/quality.min.js?version=2.2.3"></script>
- <link rel="stylesheet" href="https://www.yacoline.com/themes/default/player/plugins/quality/quality.min.css?version=2.2.3" />
-   <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
-<link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
-<title>0328 (1)</title>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://www.yacoline.com/themes/default/js/Fingerprintjs2/fingerprint2.js"></script>
+    <link rel="stylesheet" href="https://www.yacoline.com/themes/default/player/css/mediaelementplayer.min.css?version=2.2.3" />
+    <script src="https://www.yacoline.com/themes/default/player/js/mediaelement-and-player.min.js?version=2.2.3"></script>
+    <script src="https://www.yacoline.com/themes/default/player/plugins/quality/quality.min.js?version=2.2.3"></script>
+    <link rel="stylesheet" href="https://www.yacoline.com/themes/default/player/plugins/quality/quality.min.css?version=2.2.3" />
+      <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+  <title>19</title>
 </head>
 <body>
-<div class="video-player embed-video-player " style="overflow: hidden;">
-             <div class="watermark">
-              <a href="https://www.tzcmz.fun" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA9TBwSYTBoMpZ3NxvFXmNQGsFjwtHogbkmHisdecmN3QtvZUkdzOG1BjIfepcSWmlomCQklTZKBNd8uwHe6kGDDjgiYRuI9_Rm25G6w07HKfSsQ1xqO1eLILmtVG4jAx1rIFUv8xwtoPA9O-DTyX743LnHWefvPTHWzz3PMswF3Led8AwkXnxHsReMA/s50/%D8%AA%D8%AA%D8%AA%D8%AA.png" alt='watermark logo'></a>
-            </div>
+  <div class="video-player embed-video-player " style="overflow: hidden;">
+                <div class="watermark">
+          <a href="https://www.tzcmz.fun" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA9TBwSYTBoMpZ3NxvFXmNQGsFjwtHogbkmHisdecmN3QtvZUkdzOG1BjIfepcSWmlomCQklTZKBNd8uwHe6kGDDjgiYRuI9_Rm25G6w07HKfSsQ1xqO1eLILmtVG4jAx1rIFUv8xwtoPA9O-DTyX743LnHWefvPTHWzz3PMswF3Led8AwkXnxHsReMA/s50/%D8%AA%D8%AA%D8%AA%D8%AA.png" alt='watermark logo'></a>
+        </div>
                          <video  id="my-video" style="width:100%; height:100%;position: relative;" poster="https://www.yacoline.com/upload/photos/2024/03/6e2d5ed97fae58a5791c4dd9d0ea423a36c1afbc9amznT9XYvFWincAdhpG.video_thumb_2655_3296.jpeg" playsinline>
                                                                                                                      <source src="https://www.yacoline.com/upload/videos/2024/03/WYcNItOJ1YGbCrc6LEyy_28_4085e3872e4eb2f0c5829a0b1e5615ba_video_480p_converted.mp4" type="video/mp4" data-quality="480p" title='480p' label='480p' res='480'>
                                                             <source src="https://www.yacoline.com/upload/videos/2024/03/WYcNItOJ1YGbCrc6LEyy_28_4085e3872e4eb2f0c5829a0b1e5615ba_video_360p_converted.mp4" type="video/mp4" data-quality="360p" title='360p' label='360p' res='360'>
@@ -61,30 +61,21 @@ background-color: #be0000;}
 </style>
 <script>
 
-     $(document).ready(function() {
-        // Show age gate before playing the video
-        $('#age-gate').show();
-
-        // Handle click on +18 button
-        $('#over-18').click(function() {
-            $('#age-gate').hide(); // Hide age gate
-            // Start playing the video
-            $('video').mediaelementplayer({
-                pluginPath: 'https://cdnjs.com/libraries/mediaelement-plugins/',
-                autoplay: false,
-                features: ['playpause', 'current', 'progress', 'duration', 'speed', 'skipback', 'jumpforward', 'tracks', 'markers', 'volume', 'chromecast', 'contextmenu', 'flash', 'quality', 'fullscreen'],
-                vastAdTagUrl: '',
-                vastAdsType: '',
-                jumpForwardInterval: 20,
-                adsPrerollMediaUrl: [''],
-                adsPrerollAdUrl: [''],
-                adsPrerollAdEnableSkip: 0,
-                adsPrerollAdSkipSeconds: 0,
-                success: function(media) {
-                    media.addEventListener('ended', function(e) {
-                        $('#adContainer').slideUp();
-                    });
-                }
+   $('video').mediaelementplayer({
+      pluginPath: 'https://cdnjs.com/libraries/mediaelement-plugins/',
+      shimScriptAccess: 'always',
+      autoplay: false,
+      features: ['playpause', 'current', 'progress', 'duration', 'speed', 'skipback', 'jumpforward', 'tracks', 'markers', 'volume', 'chromecast', 'contextmenu', 'flash' , 'quality'  , 'fullscreen'],
+      vastAdTagUrl: '',
+      vastAdsType: '',
+      jumpForwardInterval: 20,
+      adsPrerollMediaUrl: [''],
+      adsPrerollAdUrl: [''],
+      adsPrerollAdEnableSkip: 0,
+      adsPrerollAdSkipSeconds: 0,
+      success: function (media) {
+          media.addEventListener('ended', function (e) {
+            $('#adContainer').slideUp();
 
             src = $('video').attr('src');
             sources = $('video').find('source');
@@ -132,7 +123,6 @@ $(".video-player").hover(
       }, 1000);
      }
 );
-
 // $('video, audio').mediaelementplayer({
 //   // Do not forget to put a final slash (/)
 //   pluginPath: 'https://cdnjs.com/libraries/mediaelement/',
@@ -150,28 +140,30 @@ $(".video-player").hover(
 
 
 function pt_elexists(el){
-return ($(el).length > 0);
+  return ($(el).length > 0);
 }
 var played = false;
 
 if ('' == 'vast' && played == false) {
-$('.mejs__ads-skip-button').click(function(event) {
- $('video').attr('src', 'https://www.yacoline.com/upload/videos/2024/03/WYcNItOJ1YGbCrc6LEyy_28_4085e3872e4eb2f0c5829a0b1e5615ba_video_480p_converted.mp4');
- played = true;
-});
+  $('.mejs__ads-skip-button').click(function(event) {
+    $('video').attr('src', 'https://www.yacoline.com/upload/videos/2024/03/WYcNItOJ1YGbCrc6LEyy_28_4085e3872e4eb2f0c5829a0b1e5615ba_video_240p_converted.mp4');
+    played = true;
+  });
 }
 
 
 
 $('.ad-link').on('click', function(event) {
-$('.ad-link').remove();
-$('video')[0].play();
+  $('.ad-link').remove();
+  $('video')[0].play();
 });
 
 $('.rad-transaction').click(function(event) {
-   $(this).off("click").removeClass('rad-transaction');
-   $.get('https://www.yacoline.com/aj/ads/rad-transaction', function(data){ /* pass */ });
- });
+      $(this).off("click").removeClass('rad-transaction');
+      $.get('https://www.yacoline.com/aj/ads/rad-transaction', function(data){ /* pass */ });
+    });
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 
 
 
@@ -180,10 +172,21 @@ $('.rad-transaction').click(function(event) {
 </script>
 
 <script>
+   var fingerprintReport = function () {
+      Fingerprint2.get(function(components) {
+        var murmur = Fingerprint2.x64hash128(components.map(function (pair) { return pair.value }).join(), 31)
+        $.post('https://www.yacoline.com/aj/views?hash=' + $('.main_session').val()+'&type_=set', {finger: murmur}, function(data, textStatus, xhr) {
 
-$.post('https://www.yacoline.com/aj/views?hash=' + $('.main_session').val()+'&type_=add', {video_id:27864}, function(data, textStatus, xhr) {
-if (data.status == 200) {
-   $('#video-views-count').html(data.count);
-}
-});
+         
+            $.post('https://www.yacoline.com/aj/views?hash=' + $('.main_session').val()+'&type_=add', {video_id:27837}, function(data, textStatus, xhr) {
+            if (data.status == 200) {
+               $('#video-views-count').html(data.count);
+            }
+           });
+         
+
+        });
+      })
+   }
+   fingerprintReport();
 </script>
