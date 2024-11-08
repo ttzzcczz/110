@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Courier"
+      rel="stylesheet"
+    />
+    <title>قائمة تشغيل المسلسلات</title>
+    <style>
+      body {
+          font-family: Courier Prime;
+          background-color: #222222;
+      }
+
+      .playlist {
+          overflow-x: auto;
+          white-space: nowrap;
+          background-color: #333;
+          padding: 10px;
+      }
+
+      .playlist button {
+          background-color: #be0000;
+          /* اللون الأحمر */
+          color: rgb(207, 207, 207);
+          border: none;
+          padding: 10px 20px;
+          margin: 5px;
+          cursor: pointer;
+          border-radius: 5px;
+          font-size: 16px;
+      }
+
+      .playlist button:hover {
+          background-color: #CC0000;
+          /* تغيير لون الزر عندما يتم المرور فوقه */
+      }
+
+      .video-container {
+          position: relative;
+          width: 100%;
+          padding-top: 56.25%;
+          /* نسبة عرض المشغل إلى ارتفاعه (لازمة للتأكد من أن المشغل يظهر بشكل صحيح) */
+      }
+
+      .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="playlist">
+      <button
+        onclick="playVideo('https://www.hlsplayer.net/embed?type=mp4&src=https://www.yacoline.com/upload/videos/2024/04/N7FNXZF2woDvAcaJPsN3_25_fb8e9fde6c2f085e17e70f783215cd83_video_1080p_converted.mp4')"
+      >
+        الحلقة (1)
+      </button>
+
+      <button
+        onclick="playVideo('https://www.hlsplayer.net/embed?type=mp4&src=https://www.yacoline.com/upload/videos/2024/04/LnJji8Ei7PY3nowAZT1n_25_cfb192aadd22d83a54210b71771863f7_video_1080p_converted.mp4')"
+      >
+        الحلقة (2)
+      </button>
+
+      <button
+        onclick="playVideo('https://www.hlsplayer.net/embed?type=mp4&src=https://www.yacoline.com/upload/videos/2024/04/WBWNP1kyadXXnAvN9i1Y_25_e8a7f37102c883ba4bfd77fa760c6e88_video_1080p_converted.mp4')"
+      >
+        الحلقة (3)
+      </button>
+
+      <button
+        onclick="playVideo('https://www.hlsplayer.net/embed?type=mp4&src=https://www.yacoline.com/upload/videos/2024/04/pgtNkyazhlEhNEN3EtRB_25_2f208012ffd1fcd573e55f5ea5125224_video_1080p_converted.mp4')"
+      >
+        الحلقة (4)
+      </button>
+
+      <button
+        onclick="playVideo('https://www.hlsplayer.net/embed?type=mp4&src=https://www.yacoline.com/upload/videos/2024/04/EUqaJAzQ16cVKfjtzVma_25_7969c9bd23d7e4dfafef32f488b8f5cd_video_1080p_converted.mp4')"
+      >
+        الحلقة (5)
+      </button>
+
+      <button
+        onclick="playVideo('https://www.hlsplayer.net/embed?type=mp4&src=https://www.yacoline.com/upload/videos/2024/04/18MT1jV9rdLJZCjJUAgt_25_5595abcb89c5c58cbe81a39eae5508dc_video_1080p_converted.mp4')"
+      >
+        الحلقة (6)
+      </button>
+
+      <button
+        onclick="playVideo('https://www.hlsplayer.net/embed?type=mp4&src=https://www.yacoline.com/upload/videos/2024/04/JqMmFJRFV9rssBGSZ1K5_25_159a5eb6ab479ebc3ab9634b73968d1f_video_1080p_converted.mp4')"
+      >
+        الحلقة (7)
+      </button>
+
+      <button
+        onclick="playVideo('https://www.hlsplayer.net/embed?type=mp4&src=https://www.yacoline.com/upload/videos/2024/04/bRZ5ttP8NwmYqdiRFHph_25_cc8c3fc11cf4a5e4bfb745b02ede5b3a_video_1080p_converted.mp4')"
+      >
+        الحلقة (8)
+      </button>
+
+      <button
+        onclick="playVideo('https://www.hlsplayer.net/embed?type=mp4&src=https://www.yacoline.com/upload/videos/2024/04/9UwWiuHacMLBsDOwW33K_25_9c1a3127caae6e3b94b05b421a793277_video_1080p_converted.mp4')"
+      >
+        الحلقة (9)
+      </button>
+
+      <button
+        onclick="playVideo('https://www.hlsplayer.net/embed?type=mp4&src=https://www.yacoline.com/upload/videos/2024/04/QKegTdJEaUpRxXiKXJTP_25_f5f1aecb3d6ecb3aa97566b7ed200695_video_1080p_converted.mp4')"
+      >
+        الحلقة (10)
+      </button>
+    </div>
+    <div class="video-container" id="video-container">
+      <!-- سيظهر المشغل هنا -->
+    </div>
+    <script>
+      function playVideo(videoPath) {
+          var container = document.getElementById('video-container');
+          container.innerHTML = '<iframe width="560" height="315" src="' + videoPath + '" frameborder="0" allowfullscreen></iframe>';
+      }
+    </script>
+  </body>
+</html>
