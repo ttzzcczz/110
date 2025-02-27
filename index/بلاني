@@ -1,0 +1,97 @@
+<!DOCT   l lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Courier Prime' rel='stylesheet'>
+    <title>قائمة تشغيل المسلسلات</title>
+    <style>
+        body {
+font-family: 'Courier Prime';
+background-color: #222222;
+        }
+        .playlist {
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .playlist button {
+            background-color: #be0000;
+            /* اللون الأحمر */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .playlist button:hover {
+            background-color: #CC0000;
+            /* تغيير لون الزر عندما يتم المرور فوقه */
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            /* نسبة عرض المشغل إلى ارتفاعه (لازمة للتأكد من أن المشغل يظهر بشكل صحيح) */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="playlist">
+ <button onclick="playVideo('https://rutube.ru/play/embed/ef16b353b409a4116ba9f21bf27a26ec')">السجن (1)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/01369a979fa74a32d1337da54c5d5821')">السجن (2)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/c30e8a04106b2a24cd641d174c4c64c8')">السجن (3)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/4834e8515702dca19793659dd24d6e09')">السجن (4)</button>
+    <button onclick="playVideo('https://ia800108.us.archive.org/17/items/9_20250227_202502/%D8%AD%D9%84%D9%82%D8%A9%20%205.mp4')">السجن (5)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/b8d471a24bb53dc883b2679e5e5fd679')">السجن (6)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/63fc30059a54edf4ab1b43f072ef3275')">السجن (7)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/ef5c0ed3b69c1e65655aea27b48a0def')">السجن (8)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/de7ecbe4d67e0a4f59f7d020b6bf810f')">السجن (9)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/2640d71522cf49944a32ff23830d202a')">السجن (10)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/ce2de1fbdd5a5aac33a92480e5549841')">السجن (11)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/8134a4bfa989d7ae463dc457e0eb625c')">السجن (12)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/4f0001e70feff988d69d3f7a8345259c')">السجن (13)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/df60d0041997d6c1095eea3f414e75fe')">السجن (14)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/bc1a37fa3899c0169248263e9ce50fae')">السجن (15)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/0c4e72927a515ae2507a04d7238e01bc')">السجن (16)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/5813265f9dc62c6b34a61ac3eef9c36f')">السجن (17)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/aeaf47c8d16ba3c2ac7966d04d7a2f66')">السجن (18)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/4f3530a80ca17a8d6a9adb0af1054189')">السجن (19)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/36bf9514fea7c4c3e7c2610bf0350f40')">السجن (20)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/1d93e9c2e0fe301dd1cec054931c56ab')">السجن (21)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/d3b358642f8cf0f58bf623fff945aa95')">السجن (22)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/d4e8cd47645bef3757ff5f766fcc4b76')">السجن (23)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/0c15d4cac17d1d77817ef0adb0b89abf')">السجن (24)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/fc42c79c871ebc2903be48493f927605')">السجن (25)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/17dc220df1293c9a1aef9fdb729b26d4')">السجن (26)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/19e8c5a3936d89cf523db84c6f21678e')">السجن (28)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/51363d2bbe2b1bc8a3e630e02335675a')">السجن (29)</button>
+    <button onclick="playVideo('https://rutube.ru/play/embed/51363d2bbe2b1bc8a3e630e02335675a')">السجن (30)</button>
+
+    </div>
+    <div class="video-container" id="video-container">
+        <!-- سيظهر المشغل هنا -->
+    </div>
+    <script>
+        function playVideo(videoPath) {
+            var container = document.getElementById('ضع الرابط هناeo-container');
+            container.i   L = '<iframe width="560" height="315" src="' + videoPath + '" frameborder="0" allowfullscreen></iframe>';
+        }
+    </script>
+</body>   l>
